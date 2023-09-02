@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+
+                <div class="circle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+
+            <img src="assets/img/strong.jpg" alt="" class="song-img">
+            <h1>Mashup Umbrella</h1>
+            <p>Selena Gomez</p>
+            <audio id="song">
+                <source src="assets/music/y2mate.com - Vietsub MASHUP Scars to your beautiful x Umbrella x Something just like this  MASHUP CỰC HAY.mp3" type="audio/mpeg">
+                
+            </audio>
+
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div>
+                    <i class="ri-skip-back-line"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="ri-play-line" id="ctrIcon"></i>
+                </div>
+                <div>
+                    <i class="ri-skip-forward-line"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/main.js">
+        
+    </script>
+</body>
+</html>
